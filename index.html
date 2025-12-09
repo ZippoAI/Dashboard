@@ -551,3 +551,137 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">Stokent<sup>®</sup></span>
+            </div>
+
+            <div class="nav-tabs">
+                <button class="nav-tab active">Staking</button>
+                <button class="nav-tab">Ethereum</button>
+            </div>
+
+            <div class="menu-item active">
+                <span>📊</span>
+                <span>Dashboard</span>
+            </div>
+            <div class="menu-item">
+                <span>💎</span>
+                <span>Assets</span>
+            </div>
+            <div class="menu-item">
+                <span>👥</span>
+                <span>Staking Providers</span>
+            </div>
+            <div class="menu-item">
+                <span>🧮</span>
+                <span>Staking Calculator</span>
+            </div>
+            <div class="menu-item">
+                <span>🔍</span>
+                <span>Ours APS</span>
+            </div>
+            <div class="menu-item">
+                <span>💧</span>
+                <span>Liquid Staking</span>
+                <span class="badge">New</span>
+            </div>
+            <div class="menu-item">
+                <span>⚡</span>
+                <span>Active Staking</span>
+                <span class="badge">6</span>
+            </div>
+
+            <div class="wallet-cards">
+                <div class="wallet-card">
+                    <div class="title">Asset Polygon (Matic)</div>
+                    <div class="amount">$440.00</div>
+                </div>
+                <div class="wallet-card">
+                    <div class="title">Amount $1,240.00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="header-left">
+                    <h1>Top Staking Assets</h1>
+                    <div class="breadcrumb">
+                        <span>Cryptocurrency</span>
+                        <span>›</span>
+                        <span>8 Assets</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="filter-btn">⬇ 24H</button>
+                    <button class="filter-btn">⚡ Proof of Stake</button>
+                    <button class="filter-btn">📄 Desc</button>
+                </div>
+            </div>
+
+            <!-- Staking Cards -->
+            <div class="staking-grid">
+                <div class="staking-card">
+                    <div class="staking-card-header">
+                        <div class="asset-info">
+                            <div class="asset-icon eth">Ξ</div>
+                            <div>
+                                <div class="asset-name">Proof of Stake</div>
+                                <div class="asset-symbol">Ethereum | ETH</div>
+                            </div>
+                        </div>
+                        <button class="arrow-btn">→</button>
+                    </div>
+                    <div class="apy-display">13.62%</div>
+                    <div class="change-indicator positive">
+                        ↑ +3.95%
+                    </div>
+                    <canvas id="chart1" class="mini-chart"></canvas>
+                </div>
+
+                <div class="staking-card">
+                    <div class="staking-card-header">
+                        <div class="asset-info">
+                            <div class="asset-icon bnb">◆</div>
+                            <div>
+                                <div class="asset-name">Proof of Stake</div>
+                                <div class="asset-symbol">BNB Chain</div>
+                            </div>
+                        </div>
+                        <button class="arrow-btn">→</button>
+                    </div>
+                    <div class="apy-display">12.72%</div>
+                    <div class="change-indicator positive">
+                        ↑ +3.97%
+                    </div>
+                    <canvas id="chart2" class="mini-chart"></canvas>
+                </div>
+
+                <div class="staking-card">
+                    <div class="staking-card-header">
+                        <div class="asset-info">
+                            <div class="asset-icon matic">◆</div>
+                            <div>
+                                <div class="asset-name">Proof of Stake</div>
+                                <div class="asset-symbol">Polygon | MATIC</div>
+                            </div>
+                        </div>
+                        <button class="arrow-btn">→</button>
+                    </div>
+                    <div class="apy-display">6.29%</div>
+                    <div class="change-indicator negative">
+                        ↓ -1.1%
+                    </div>
+                    <canvas id="chart3" class="mini-chart"></canvas>
+                </div>
+            </div>
